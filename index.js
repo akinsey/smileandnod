@@ -8,7 +8,8 @@ app.use(bodyParser());
 app.post('/*', function(req, res) {
   if (req.body) {
     console.log('Route posted to:  ' + req.path);
-    console.log('Post Data:\n' + req.body);
+    console.log('Body Parameters:');
+    console.log(req.body);
   }
   res.end();
 });
